@@ -8,9 +8,9 @@
     --color-primary: #00CC99;
     --color-secondary: #0091FF;
 
-    --color-primary-2: #FB4927;
-    --gradient-color-from: #D91334;
-    --gradient-color-to: #FB4927;
+    --color-primary-2: #e57320;
+    --gradient-color-from: #E57320;
+    --gradient-color-to: #03669a;
 
     --color-gradient: linear-gradient(90deg, var(--gradient-color-from) 0%, var(--gradient-color-to) 100%);
 
@@ -24,4 +24,11 @@
     --color-border: #EFF5F8;
 
     --easing: cubic-bezier(0.67, 0.04, 0.3, 0.91);
+
+
+    
+// --color-primary-2: #FB4927;
+// --gradient-color-from: #D91334;
+// --gradient-color-to: #FB4927;
+
 }
