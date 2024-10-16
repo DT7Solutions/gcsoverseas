@@ -8480,3 +8480,23 @@ a.ui-button:active, .ui-button:active,
         margin-top: 20px; } }
 
 /*# sourceMappingURL=main.css.map */
+
+.banner-text{
+  margin-left: 200px;
+}
+
+@media (max-width: 480px) {
+  .banner-text{
+    margin-left: 0px;
+  }
+  
+}
+
+.xb-item--content{
+  display: -webkit-box;           /* Use flexbox layout */
+    -webkit-box-orient: vertical;  /* Set box orientation to vertical */
+    -webkit-line-clamp: 4;         /* Limit the number of lines to 5 */
+    overflow: hidden;               /* Hide overflowed content */
+    text-overflow: ellipsis;       /* Add ellipsis at the end */
+    
+}
