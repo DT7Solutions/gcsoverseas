@@ -54,7 +54,7 @@
   --color-primary: #00CC99;
   --color-secondary: #0091FF;
   --color-primary-2: #FB4927;
-  --gradient-color-from: #D91334;
+  --gradient-color-from: #e57320;
   --gradient-color-to: #FB4927;
   --color-gradient: linear-gradient(90deg, var(--gradient-color-from) 0%, var(--gradient-color-to) 100%);
   --color-heading: #0F172A;
@@ -8499,4 +8499,19 @@ a.ui-button:active, .ui-button:active,
     overflow: hidden;               /* Hide overflowed content */
     text-overflow: ellipsis;       /* Add ellipsis at the end */
     
+}
+.xb-feature2 .xb-item--inner::before, .xb-feature2 .xb-item--inner::after {
+  position: absolute;
+  content: "\f067";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+  left: -4px;
+  bottom: -14px;
+  font-size: 12px;
+  z-index: 1;
+  /* background: var(--color-gradient); */
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
