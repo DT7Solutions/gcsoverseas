@@ -2651,6 +2651,14 @@ h6 {
   .header-style-two .xb-header-mobile-search .search-field:focus {
     border-color: var(--color-primary-2); }
 
+.mobial-menu-items li {
+  list-style: none;
+  padding-bottom: 10px;
+} 
+.mobial-menu-items li a{
+  border-bottom: 1px solid #ddd9d9;
+}
+
 .xb-header-top {
   border-bottom: 1px solid #212121;
   padding: 20px 0; }
@@ -8490,6 +8498,12 @@ a.ui-button:active, .ui-button:active,
     margin-left: 0px;
   }
   
+  .style-2{
+    border-top-right-radius:0px !important;
+  }
+  .style-3{
+    border-bottom-left-radius:0px !important;
+  }
 }
 
 .xb-item--content{
