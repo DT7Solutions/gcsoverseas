@@ -25,12 +25,10 @@
                 return;
             }
 
-            // Show loading message and hide error and success messages
             form.querySelector('.loading').classList.add('d-block');
             form.querySelector('.error-message').classList.remove('d-block');
             form.querySelector('.sent-message').classList.remove('d-block');
 
-            // Send the email
             sendMail(form);
         });
     });
@@ -43,12 +41,11 @@
             message: document.getElementById("message").value,
         };
 
-        emailjs.send("service_975uom88", "template_wisufk1", params).then(
+        emailjs.send("service_975uom8", "template_wisufk1", params).then(
             function (response) {
                 console.log("Email sent Successfully:", response);
                 form.reset();
                 
-                // Hide loading and show sent message
                 form.querySelector('.loading').classList.remove('d-block');
                 const sentMessageElement = form.querySelector('.sent-message');
                 sentMessageElement.classList.add('d-block');
@@ -60,6 +57,7 @@
             function (error) {
                 console.error("Email Sending failed:", error);
                 displayError(form, "There was an error while sending your message. Please try again later.");
+                form.reset();
             }
         );
     }
